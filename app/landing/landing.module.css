@@ -3,10 +3,14 @@
     box-sizing: border-box;
     margin: 0;
 } */
+
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.landingPage{
+    position: "relative";
 }
 .bigText {
     font-size: 7rem;
@@ -17,4 +21,33 @@
     color: #fff;
     font-size: 7rem;
     cursor: pointer;
+    width: fit-content;
 }
+.firstText::before {
+    display: block;
+    content: "Hello.";
+}
+.firstText:hover::before {
+    display: block;
+    content: "About";
+}
+.secondText::before {
+    display: block;
+    content: "I am";
+}
+.secondText:hover::before {
+    display: block;
+    content: "Work";
+}
+.thirdText::before {
+    display: block;
+    content: "Chioma";
+}
+.thirdText:hover::before {
+    display: block;
+    content: "Contact";
+}
+.background {
+    position: "absolute";
+    z-index: 1;
+ }
