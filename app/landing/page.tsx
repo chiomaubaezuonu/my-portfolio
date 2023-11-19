@@ -7,7 +7,7 @@ import styles from './landing.module.css'
 
 const LandingPage = () => {
     return (
-        <div className='flex justify-between px-14 bg-black h-screen'>
+        <div className='flex justify-between px-24 bg-black h-screen'>
             <div className='landingPage'>
                 <m.h1
                     initial={{ opacity: 0 }}
@@ -19,7 +19,7 @@ const LandingPage = () => {
                 <m.h1
                     initial={{ opacity: 0 }}
                     animate={{ y: -25, opacity: 1, scale: 1 }}
-                    whileHover={{ x: 40}}
+                    whileHover={{ x: 40 }}
                     transition={{ ease: "easeOut", delay: 0.25, duration: 0.5 }}
                     className={`${styles.secondText} ${styles.bigText}`}>
                 </m.h1>
@@ -32,8 +32,10 @@ const LandingPage = () => {
 
                 </m.h1>
             </div>
-            <m.div animate={{ y: -20 }}
-                transition={{ ease: "easeIn", duration: 2 }}>
+            <m.div
+                initial={{ opacity: 0 }}
+                animate={{ y: -20, opacity: 1 }}
+                transition={{ ease: "easeIn", duration: 0.2 }}>
                 <Image className={styles.background} src={me2} alt="my-profile" width={300} height={700} />
             </m.div>
 
