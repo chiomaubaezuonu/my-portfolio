@@ -34,7 +34,7 @@ const LandingPage = () => {
             </div>
             <m.div animate={{ y: -20 }}
                 transition={{ ease: "easeIn", duration: 2 }}>
-                <Image className={styles.background} src={'/me2.jpeg'} alt="my-profile" width={300} height={700} />
+                <Image className={styles.background} src={me2} alt="my-profile" width={300} height={700} />
             </m.div>
 
         </div>
