@@ -1,0 +1,17 @@
+.skillCards {
+    color: rgb(2, 2, 43);
+    margin-bottom: 0.4rem;
+    background-color: powderblue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+    /* overflow-x: auto; */
+
+}
+
+.card {
+    display: block;
+    width: fit-content;
+    background-color: darkblue;
+}

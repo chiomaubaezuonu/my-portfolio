@@ -1,52 +1,54 @@
-export  interface Skill{
-    id: number, 
-    img: string,
-    skillName: string,
-    level: string
-}
+
 export default [
     {
         id: 1,
-        img: "./images/html5.png",
-        skillName: "",
-        level: ""
+        img: "/images/html5.png",
+        skillName: "HTML5",
+        level: "Proficient"
     },
     {
         id: 2,
-        img: "",
-        skillName: "",
-        level: ""
+        img: "/images/css.png",
+        skillName: "CSS",
+        level: "Proficient"
     },
     {
         id: 3,
-        img: "",
-        skillName: "",
-        level: ""
+        img: "/images/js.png",
+        skillName: "Javascript",
+        level: "Expert"
     },
     {
         id: 4,
-        img: "",
-        skillName: "",
-        level: ""
+        img: "/images/react.png",
+        skillName: "React",
+        level: "Expert"
     },
     {
         id: 5,
-        img: "",
-        skillName: "",
-        level: ""
+        img: "/images/typescript.png",
+        skillName: "Typescript",
+        level: "Proficient"
     },
     {
         id: 6,
-        img: "",
-        skillName: "",
-        level: ""
+        img: "/images/nextjs.png",
+        skillName: "Next js",
+        level: "Proficient"
 
     },
     {
         id: 7,
-        img: "",
-        skillName: "",
-        level: ""
+        img: "/images/tailwind.jpeg",
+        skillName: "Tailwind",
+        level: "Expert"
+
+    },
+    {
+        id: 8,
+        img: "/images/antd.png",
+        skillName: "Antd",
+        level: "Proficient"
 
     }
 ]
