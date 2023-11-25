@@ -1,17 +1,24 @@
 .skillCards {
+    width: 70%;
+    margin: auto;
     color: rgb(2, 2, 43);
     margin-bottom: 0.4rem;
-    background-color: powderblue;
+    background-color: #EFF4FB;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: 20px;
-    /* overflow-x: auto; */
+    flex-wrap: wrap;
+    padding: 5rem;
 
 }
 
 .card {
+    background-color: #A7EED3;
+    margin: 0.5rem;
+    padding: 2.8rem;
+}
+
+.skillTitle {
+    color: #296657;
+    font-weight: bolder;
     display: block;
-    width: fit-content;
-    background-color: darkblue;
 }
