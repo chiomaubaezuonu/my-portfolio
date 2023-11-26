@@ -13,10 +13,9 @@ type SkillsProps = {
 }
 const Skills = (props: SkillsProps) => {
   return (
-    <div>
-
+    <div className={styles.wrapper}>
+      <h1 className={styles.skillTitle}>My Skills</h1>
       <div className={styles.skillCards}>
-        <h1 className={styles.skillTitle}>My Skills</h1>
         {props.mySkills.map(skill => {
           return (
             <div className={styles.card} key={skill.id}>
