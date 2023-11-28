@@ -1,6 +1,7 @@
 import LandingPage from "./landing/page";
 import Skills from "./skills/page";
 import data from "./skills/data"
+import Link from "next/link";
 
 export default function Home() {
 
@@ -11,6 +12,9 @@ export default function Home() {
     <div>
       <LandingPage />
       <Skills mySkills={data} />
+      <Link href='/about'>
+      <h1>About me</h1>
+      </Link>
     </div>
   )
 }
