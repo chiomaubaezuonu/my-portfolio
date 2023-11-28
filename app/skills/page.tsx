@@ -20,9 +20,9 @@ const Skills = (props: SkillsProps) => {
           return (
             <div className={styles.card} key={skill.id}>
               {/* <Image src={skill.img} alt="html5" width={60} height={60} /> */}
-              <img src={skill.img} alt="skillLogo" width={60} height={60} />
-              <h2>{skill.level}</h2>
-              <h2>{skill.skillName}</h2>
+              <img src={skill.img} alt="skillLogo" width={50} height={50} />
+              <h2 className={styles.skillName}>{skill.skillName}</h2>
+              <h2 className={styles.skillLevel}>{skill.level}</h2>
             </div>
           )
         })}

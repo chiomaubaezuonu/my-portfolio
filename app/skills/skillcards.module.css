@@ -1,16 +1,17 @@
-.wrapper{
-    background-color: #EFF4FB; 
+.wrapper {
+    background-color: #EFF4FB;
     width: 70%;
     margin: auto;
     padding: 0;
 }
+
 .skillCards {
     width: 100%;
     margin: auto;
     background-color: #EFF4FB;
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem;  
+    padding: 5rem;
     justify-content: center;
 
 }
@@ -19,10 +20,23 @@
     width: 9.5em;
     background-color: #A7EED3;
     margin: 0.3rem;
-    padding: 1.5rem 2.9rem;
+    padding: 1.8rem 3.1rem;
+}   
+
+.skillName {
+    color: #0f6f55;
+    font-size: 1rem;
+    margin: 0.6rem 0;
+}
+
+.skillLevel {
+    color: #579F87;
+    text-align: center;
+    font-size: 0.6rem;
 }
 
 .skillTitle {
     color: #296657;
+    background-color: greenyellow;
     font-weight: bolder;
 }
