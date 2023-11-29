@@ -10,17 +10,20 @@ import styles from './about.module.css'
 const about = () => {
   return (
     <div className={styles.absolute}>
-      {/* <m.img animate={{ x: 20 }} transition={{
+      <div className={styles.aboutDiv}>
+        {/* <m.img animate={{ x: 20 }} transition={{
         type: "smooth",
         repeatType: "mirror",
         duration: 2,
         repeat: Infinity,
       }} src='/images/handWave.png' width={25} height={25} alt='handWave' /> */}
-      {/* / <Image src={hand} alt='handImg' width={20} height={20} /> */}
-      {/* <span >&#128075;</span> */}
-      <span className={styles.emoji}> 👋 </span>
+        {/* / <Image src={hand} alt='handImg' width={20} height={20} /> */}
+        {/* <span >&#128075;</span> */}
+        <span className={styles.emoji} style={{fontSize:'2rem'}}> Hi, I am Chioma Precious.  👋 </span>
+        <p className={styles.about}>A skilled frontend web developer</p>
+      </div>
     </div >
   )
-} 
+}
 
 export default about

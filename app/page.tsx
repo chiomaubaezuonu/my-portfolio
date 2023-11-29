@@ -15,6 +15,11 @@ export default function Home() {
       <Link href='/about'>
       <h1>About me</h1>
       </Link>
+      <Link href='/projects'>
+      <button style={{background:'darkblue', color:'powderblue'}}>
+        Projects
+      </button>
+      </Link>
     </div>
   )
 }

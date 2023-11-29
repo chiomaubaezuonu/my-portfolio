@@ -4,7 +4,7 @@
     animation: waving-hand 2.5s infinite;
     transform-origin: 70% 70%;
 } */
-.emoji{
+/* .emoji{
     animation-name: wave-animation;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
@@ -15,9 +15,9 @@
 }
 .absolute{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
 }
 @keyframes waving-animation  {
     0% {
@@ -49,4 +49,17 @@
     100% {
         transform: rotate(0deg);
     }
+} */
+.aboutDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about {
+    font-size: 1.7rem;
+    color: rgb(69, 69, 69);
+
 }

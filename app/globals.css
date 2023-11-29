@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* 
 span {
     cursor: pointer;
     font-size: 4rem;
     animation: waving-hand 2.5s infinite;
     transform-origin: 70% 70%;
-}
+} */
 
 /* @keyframes waving-hand {
     0% {
