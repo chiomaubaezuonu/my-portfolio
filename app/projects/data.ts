@@ -4,11 +4,11 @@ export default [
         img: '/images/todo.jpeg'
     },
     {
-        id: 1,
+        id: 2,
         img: '/images/order.jpeg'
     },
     {
-        id: 1,
+        id: 3,
         img: '/images/chatroom.jpeg'
     },
     {
