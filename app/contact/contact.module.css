@@ -1,5 +1,24 @@
 .wrapper {
+   margin: auto;
+    height: 100vh;
+    /* padding-top: 6rem; */
+    padding: 6rem 8rem ;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+.text{
+    text-align: center;
+    font-size: 1rem;
+}
+.socials{
+    width: 25%;
+    /* background-color: aquamarine; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    margin-top: 8rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
 }
