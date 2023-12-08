@@ -21,6 +21,7 @@ const about = () => {
         {/* <span >&#128075;</span> */}
         <span className={styles.emoji} style={{fontSize:'2rem'}}> Hi, I am Chioma Precious.  👋 </span>
         <p className={styles.about}>A skilled frontend web developer</p>
+        <p>My tech stack at work is Html5, Css, Javascript, Next.js, TypeScript, Firebase and SASS.</p>
       </div>
     </div >
   )
