@@ -86,8 +86,8 @@ const page = () => {
                 <Link href='https://twitter.com/ChiomaPresh1029'>
                     <Image src={twitter} alt='twitter' />
                 </Link>
-                <Image src={phone} className={styles.phone} alt='phone' />
-                <Image src={mail} className={styles.mail} alt='email' />
+                {/* <Image src={phone} className={styles.phone} alt='phone' />
+                <Image src={mail} className={styles.mail} alt='email' /> */}
             </div>
         </div>
     )
