@@ -196,9 +196,6 @@
 }
 
 @media (min-width: 1200px) {
-    .wrapper {
-        background-color: goldenrod;
-    }
 
     .modal {
         width: 40%;
