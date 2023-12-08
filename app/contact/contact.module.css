@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.form {
+    padding: 1rem;
+}
+
 .modal {
     display: block;
     margin: auto;
@@ -15,14 +19,44 @@
     bottom: 0;
     width: 30%;
     height: 50%;
-    /* margin-left: 12rem; */
     position: absolute;
-    padding: 2rem;
+    padding: 1rem 1rem;
     background-color: rgb(157, 242, 253, 0.9);
 }
-.closeModal{
+
+.closeModal {
+    position: absolute;
     cursor: pointer;
+    display: block;
+    right: 0;
+    top: 0;
 }
+
+.input {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.textArea {
+    padding: 2.5rem;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+
+.submitBtn {
+    /* border: 0.1rem solid #2F6A5A; */
+    background-color: #2F6A5A;
+    width: 100%;
+    border-radius: 0.3rem;
+    color: rgb(157, 242, 253);
+    padding: 0.4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .title {
     font-size: 3rem;
     text-align: center;

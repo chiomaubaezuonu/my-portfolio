@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from './contact.module.css'
 import Image from 'next/image'
 import github from './github.svg'
@@ -8,19 +8,69 @@ import linkedin from './linkedin.svg'
 import phone from './phone.png'
 import mail from './email.svg'
 import Link from 'next/link'
+import submit from './submit.svg'
+import emailjs from '@emailjs/browser'
 
 const page = () => {
+    const form = useRef();
     const [contact, setContact] = useState<boolean>(false)
-    if (contact) {
-        console.log("yes")
+    const [yourName, setYourName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+    const [isPending, setIsPending] = useState(false)
+
+
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        //const feedBack = { yourName, email, message }
+        setIsPending(true)
+        // const currentForm = form.current
+        // if (currentForm === null) return;
+        emailjs.sendForm(
+            "service_5lwfrko",
+            "template_phymsvc",
+            form.current ? form.current : "",
+            "BihswsOiiYV8MHFCU"
+        )
+            .then(
+                (result) => {
+                    console.log(result.text)
+                    setIsPending(false)
+                    setYourName("")
+                    setEmail("")
+                    setMessage("")
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            )
+        // fetch('http://localhost:8000/contact', {
+        //     method: 'POST',
+        //     headers: { "Content-Type": "application/json" },
+        //     body: JSON.stringify(feedBack)
+        // }).then(() => {
+        //     console.log("sent")
+        //     setIsPending(false)
+        // })
     }
+
     return (
         <div className={styles.wrapper}>
             {contact && <div className={styles.modal}>
-                <form action="submit">
+                <form ref={form} onSubmit={sendEmail} className={styles.form}>
                     <p className={styles.closeModal} onClick={() => setContact(false)}>X</p>
-                    <input type="text" placeholder='Name' />
-                    <textarea placeholder='Comment'></textarea>
+                    <input className={styles.input} name="user_name" value={yourName}
+                        onChange={(e) => setYourName(e.target.value)}
+                        type="text" placeholder='Your name' required />
+                    <input
+                        onChange={(e) => setEmail(e.target.value)}
+                        className={styles.input} name="user_email" value={email} type="email" placeholder='Your email' />
+                    <textarea name="message" onChange={(e) => setMessage(e.target.value)} value={message} className={styles.textArea} placeholder='Your message'></textarea>
+                    {!isPending && <button className={styles.submitBtn} type='submit'>
+                        <Image style={{ paddingRight: '0.5rem' }} src={submit} alt='submit' width={20} height={20} />
+                        Submit</button>}
+                    {isPending && <button className={styles.submitBtn} type='submit'> Submitting ...</button>}
                 </form>
             </div>}
             <h1 className={styles.title}>Let's work together</h1>
