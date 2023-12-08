@@ -19,9 +19,9 @@ const about = () => {
       }} src='/images/handWave.png' width={25} height={25} alt='handWave' /> */}
         {/* / <Image src={hand} alt='handImg' width={20} height={20} /> */}
         {/* <span >&#128075;</span> */}
-        <span className={styles.emoji} style={{fontSize:'2rem'}}> Hi, I am Chioma Precious.  👋 </span>
-        <p className={styles.about}>A skilled frontend web developer</p>
-        <p>My tech stack at work is Html5, Css, Javascript, Next.js, TypeScript, Firebase and SASS.</p>
+        <span className={styles.emoji}> Hi, I am Chioma Precious.👋 </span>
+        <p className={styles.about}>A skilled frontend web developer, I build exceptional and accessible digital experiences for the web.</p>
+        <p className={styles.about}>My tech stack at work is Html5, Css, Javascript, Next.js, TypeScript, Firebase and SASS.</p>
       </div>
     </div >
   )
