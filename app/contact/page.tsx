@@ -8,7 +8,7 @@ import linkedin from './linkedin.svg'
 import phone from './phone.png'
 import mail from './email.svg'
 import Link from 'next/link'
-import submit from './submit.svg'
+import submit from './submit.png'
 import emailjs from '@emailjs/browser'
 import { Button, Input } from 'antd';
 
@@ -53,11 +53,11 @@ const page = () => {
             <div>
                 <h1 className={styles.contactTitle}>Let's discuss <br /> on something <mark style={{ color: "#AD2484", background: "#DCCFED" }}> cool </mark> together</h1>
                 <p>I'm interested in..</p>
-                <Button type='primary'>Ecommerce Website</Button>
-                <Button type='primary'>Sass Website</Button> <br />
-                <Button type='primary'>Landing Page</Button>
-                <Button type='primary'>Portfolio</Button>
-                <Button type='primary'>Blog Website</Button>
+                <Button style={{ background: '#331C52' }} type='primary'>Ecommerce Website</Button>
+                <Button style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Sass Website</Button> <br />
+                <Button style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Landing Page</Button>
+                <Button style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Portfolio</Button>
+                <Button style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Blog Website</Button>
             </div>
             <div><form ref={formRef} onSubmit={sendEmail} className={styles.form}>
                 {/* <p className={styles.closeModal} onClick={() => setContact(false)}>X</p>
@@ -72,30 +72,30 @@ const page = () => {
                         <Image style={{ paddingRight: '0.5rem' }} src={submit} alt='submit' width={20} height={20} />
                         Submit</button>}
                     {isPending && <button className={styles.submitBtn} type='submit'> Submitting ...</button>} */}
-                <Input onChange={(e) => setYourName(e.target.value)} name="user_name" placeholder='Your name' required />
-                <Input onChange={(e) => setEmail(e.target.value)} name="user_email" placeholder='Your email' required />
-                <TextArea onChange={(e) => setMessage(e.target.value)} name='message' placeholder='Your message' />
+                <Input className={styles.input} onChange={(e) => setYourName(e.target.value)} name="user_name" placeholder='Your name' required />
+                <Input className={styles.input} onChange={(e) => setEmail(e.target.value)} name="user_email" placeholder='Your email' required />
+                <TextArea className={styles.textArea} onChange={(e) => setMessage(e.target.value)} name='message' placeholder='Your message' />
                 {!isPending && <button className={styles.submitBtn} type='submit'>
-                    <Image style={{ paddingRight: '0.5rem' }} src={submit} alt='submit' width={20} height={20} />
+                    <Image style={{ paddingRight: '0.5rem', color: 'white' }} src={submit} alt='submit' width={20} height={20} />
                     Submit</button>}
                 {isPending && <Button type='primary' className={styles.submitBtn} > Submitting ...</Button>}
             </form>
                 {/* </div>} */}
                 <div className={styles.socials}>
-                    <Link href='https://github.com/chiomaubaezuonu'>
+                    <Link  href='https://github.com/chiomaubaezuonu'>
                         <Image src={github} alt='github' />
                     </Link>
                     <Link href='https://www.linkedin.com/in/chioma-ubaezuonu-924b1214b/'>
                         <Image src={linkedin} alt='Linkedin' />
                     </Link>
                     <Link href='https://twitter.com/ChiomaPresh1029'>
-                        <Image src={twitter} alt='twitter' />
-                    </Link>
-                    {/* <Image src={phone} className={styles.phone} alt='phone' />
+                    <Image src={twitter} alt='twitter' />
+                </Link>
+                {/* <Image src={phone} className={styles.phone} alt='phone' />
                 <Image src={mail} className={styles.mail} alt='email' /> */}
-                </div>
             </div>
         </div>
+        </div >
     )
 }
 

@@ -5,6 +5,7 @@
     display: flex;
     background-color: #DCCFED;
     font-weight: bolder;
+    justify-content: space-around;
 }
 
 .contactTitle {
@@ -15,28 +16,30 @@
 
 .form {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .input {
     margin-bottom: 1rem;
-    width: 100%;
+    width: 27rem;
     padding: 0.3rem;
-    border-radius: 0.3rem;
+    border-radius: 0.4rem;
 }
 
 .textArea {
     padding: 2.5rem;
-    border-radius: 0.3rem;
-    width: 100%;
+    border-radius: 0.4rem;
+    width: 27rem;
     margin-bottom: 2rem;
 }
 
 .submitBtn {
     /* border: 0.1rem solid #2F6A5A; */
-    background-color: #2F6A5A;
-    width: 100%;
+    background-color: #331C52;
+    width: 27rem;
     border-radius: 0.3rem;
-    color: rgb(157, 242, 253);
+    color: #FFF9FB;
     padding: 0.4rem 0;
     display: flex;
     justify-content: center;
@@ -56,7 +59,6 @@
 
 .socials {
     width: 40%;
-    /* background-color: aquamarine; */
     display: flex;
     margin: auto;
     margin-top: 3rem;
