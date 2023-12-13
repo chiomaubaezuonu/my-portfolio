@@ -1,12 +1,12 @@
 .wrapper {
     background-color: #EFF4FB;
-    width: 70%;
+    width: 100%;
     margin: auto;
     padding: 0;
 }
 
 .skillCards {
-    width: 100%;
+    width: 70%;
     margin: auto;
     background-color: #EFF4FB;
     display: flex;
@@ -21,7 +21,7 @@
     background-color: #A7EED3;
     margin: 0.3rem;
     padding: 1.8rem 3.1rem;
-}   
+}
 
 .skillName {
     color: #0f6f55;
@@ -37,6 +37,32 @@
 
 .skillTitle {
     color: #296657;
-    background-color: greenyellow;
+    background-color: #EFF4FB;
+    width: 100%;
     font-weight: bolder;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    padding-left: 4.5rem;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .skillCards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5rem;
+        justify-content: center;
+        background-color: #0f6f55;
+    }
+    .card {
+        width: 2em;
+        background-color: #A7EED3;
+        margin: 0.3rem;
+        padding: 1.8rem 3.1rem;
+    }
 }

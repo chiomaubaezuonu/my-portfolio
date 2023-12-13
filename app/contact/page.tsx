@@ -10,17 +10,18 @@ import mail from './email.svg'
 import Link from 'next/link'
 import submit from './submit.svg'
 import emailjs from '@emailjs/browser'
+import { Button, Input } from 'antd';
 
 const page = () => {
-    const form = useRef();
-    const [contact, setContact] = useState<boolean>(false)
+    const formRef = useRef<HTMLFormElement>(null);
+    // const [contact, setContact] = useState<boolean>(false)
     const [yourName, setYourName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
     const [isPending, setIsPending] = useState(false)
 
 
-
+    const { TextArea } = Input;
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         //const feedBack = { yourName, email, message }
@@ -30,7 +31,7 @@ const page = () => {
         emailjs.sendForm(
             "service_5lwfrko",
             "template_phymsvc",
-            form.current ? form.current : "",
+            formRef.current ? formRef.current : "",
             "BihswsOiiYV8MHFCU"
         )
             .then(
@@ -45,21 +46,21 @@ const page = () => {
                     console.log(error.text);
                 }
             )
-        // fetch('http://localhost:8000/contact', {
-        //     method: 'POST',
-        //     headers: { "Content-Type": "application/json" },
-        //     body: JSON.stringify(feedBack)
-        // }).then(() => {
-        //     console.log("sent")
-        //     setIsPending(false)
-        // })
     }
 
     return (
         <div className={styles.wrapper}>
-            {contact && <div className={styles.modal}>
-                <form ref={form} onSubmit={sendEmail} className={styles.form}>
-                    <p className={styles.closeModal} onClick={() => setContact(false)}>X</p>
+            <div>
+                <h1 className={styles.contactTitle}>Let's discuss <br /> on something <mark style={{ color: "#AD2484", background: "#DCCFED" }}> cool </mark> together</h1>
+                <p>I'm interested in..</p>
+                <Button type='primary'>Ecommerce Website</Button>
+                <Button type='primary'>Sass Website</Button> <br />
+                <Button type='primary'>Landing Page</Button>
+                <Button type='primary'>Portfolio</Button>
+                <Button type='primary'>Blog Website</Button>
+            </div>
+            <div><form ref={formRef} onSubmit={sendEmail} className={styles.form}>
+                {/* <p className={styles.closeModal} onClick={() => setContact(false)}>X</p>
                     <input className={styles.input} name="user_name" value={yourName}
                         onChange={(e) => setYourName(e.target.value)}
                         type="text" placeholder='Your name' required />
@@ -70,27 +71,32 @@ const page = () => {
                     {!isPending && <button className={styles.submitBtn} type='submit'>
                         <Image style={{ paddingRight: '0.5rem' }} src={submit} alt='submit' width={20} height={20} />
                         Submit</button>}
-                    {isPending && <button className={styles.submitBtn} type='submit'> Submitting ...</button>}
-                </form>
-            </div>}
-            <h1 className={styles.title}>Let's work together</h1>
-            <p className={styles.text}>I am always open to new opportunities</p>
-            <button onClick={() => setContact(!contact)} className={styles.button}>Contact me</button>
-            <div className={styles.socials}>
-                <Link href='https://github.com/chiomaubaezuonu'>
-                    <Image src={github} alt='github' />
-                </Link>
-                <Link href='https://www.linkedin.com/in/chioma-ubaezuonu-924b1214b/'>
-                    <Image src={linkedin} alt='Linkedin' />
-                </Link>
-                <Link href='https://twitter.com/ChiomaPresh1029'>
-                    <Image src={twitter} alt='twitter' />
-                </Link>
-                {/* <Image src={phone} className={styles.phone} alt='phone' />
+                    {isPending && <button className={styles.submitBtn} type='submit'> Submitting ...</button>} */}
+                <Input onChange={(e) => setYourName(e.target.value)} name="user_name" placeholder='Your name' required />
+                <Input onChange={(e) => setEmail(e.target.value)} name="user_email" placeholder='Your email' required />
+                <TextArea onChange={(e) => setMessage(e.target.value)} name='message' placeholder='Your message' />
+                {!isPending && <button className={styles.submitBtn} type='submit'>
+                    <Image style={{ paddingRight: '0.5rem' }} src={submit} alt='submit' width={20} height={20} />
+                    Submit</button>}
+                {isPending && <Button type='primary' className={styles.submitBtn} > Submitting ...</Button>}
+            </form>
+                {/* </div>} */}
+                <div className={styles.socials}>
+                    <Link href='https://github.com/chiomaubaezuonu'>
+                        <Image src={github} alt='github' />
+                    </Link>
+                    <Link href='https://www.linkedin.com/in/chioma-ubaezuonu-924b1214b/'>
+                        <Image src={linkedin} alt='Linkedin' />
+                    </Link>
+                    <Link href='https://twitter.com/ChiomaPresh1029'>
+                        <Image src={twitter} alt='twitter' />
+                    </Link>
+                    {/* <Image src={phone} className={styles.phone} alt='phone' />
                 <Image src={mail} className={styles.mail} alt='email' /> */}
+                </div>
             </div>
         </div>
     )
 }
 
-export default page
+export default page 
