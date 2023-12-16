@@ -3,24 +3,17 @@ import React from 'react';
 import styles from './skillcards.module.css'
 import mySkills from './data'
 
-type SkillsProps = {
-  mySkills: {
-    id: number,
-    img: string,
-    skillName: string,
-    level: string
-  }[]
-}
-const Skills = (props: SkillsProps) => {
+
+const Skills = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.skillCards}>
-      <h1 className={styles.skillTitle}>My Skills</h1>
-        {props.mySkills.map(skill => {
+        <h1 className={styles.skillTitle}>My Skills</h1>
+        {mySkills.map(skill => {
           return (
             <div className={styles.card} key={skill.id}>
               {/* <Image src={skill.img} alt="html5" width={60} height={60} /> */}
-              <img src={skill.img} alt="skillLogo" />
+              <img className={styles.skillIcons} src={skill.img} alt="skillLogo" />
               <h2 className={styles.skillName}>{skill.skillName}</h2>
               <h2 className={styles.skillLevel}>{skill.level}</h2>
             </div>

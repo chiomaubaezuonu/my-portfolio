@@ -1,43 +1,57 @@
-.wrapper{
+.wrapper {
     background-color: #EFF4FB;
 }
+
 .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
+    font-weight: bolder;
 }
 
 .projectText {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
+    font-weight: 500;
 }
 
 .projectsContainer {
-    background-color: #EFF4FB;
+    /* background-color: #EFF4FB; */
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding: 1rem;
     margin: auto;
     justify-content: center;
-    position: absolute;
 }
 
 .projectCard {
-    /* width: 30rem; */
     margin: 0.2rem;
     background-color: #A7EED3;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    
+    position: relative;
+    border-radius: 1.5rem;
 }
 
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(4, 4, 46,0.2);
+    border-radius: 1.5rem;
+}
+.overlay:hover{
+   position: relative;
+}
 .projectImg {
     border-radius: 0.7rem;
     cursor: pointer;
     margin: auto;
 }
 
-.websiteButton{
+.websiteButton {
     background-color: rgb(174, 174, 216);
     color: blue;
     border-radius: 0.3rem;

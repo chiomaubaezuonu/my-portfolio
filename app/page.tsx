@@ -11,7 +11,10 @@ export default function Home() {
   return (
     <div>
       <LandingPage />
-      <Skills mySkills={data} />
+      {/* <Skills mySkills={data} /> */}
+      <Link href='/skills'>
+      <h1>skills</h1>
+      </Link>
       <Link href='/about'>
       <h1>About me</h1>
       </Link>

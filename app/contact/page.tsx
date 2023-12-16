@@ -82,13 +82,13 @@ const page = () => {
             </form>
                 {/* </div>} */}
                 <div className={styles.socials}>
-                    <Link  href='https://github.com/chiomaubaezuonu'>
+                    <Link className={styles.socialLink} href='https://github.com/chiomaubaezuonu'>
                         <Image src={github} alt='github' />
                     </Link>
-                    <Link href='https://www.linkedin.com/in/chioma-ubaezuonu-924b1214b/'>
+                    <Link  className={styles.socialLink} href='https://www.linkedin.com/in/chioma-ubaezuonu-924b1214b/'>
                         <Image src={linkedin} alt='Linkedin' />
                     </Link>
-                    <Link href='https://twitter.com/ChiomaPresh1029'>
+                    <Link  className={styles.socialLink} href='https://twitter.com/ChiomaPresh1029'>
                     <Image src={twitter} alt='twitter' />
                 </Link>
                 {/* <Image src={phone} className={styles.phone} alt='phone' />

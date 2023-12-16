@@ -2,25 +2,28 @@
     background-color: #EFF4FB;
     width: 100%;
     margin: auto;
-    padding: 0;
+    padding: 4rem 1rem;
+    height: 100vh;
 }
 
 .skillCards {
-    width: 70%;
+    width: 80%;
     margin: auto;
     background-color: #EFF4FB;
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem;
     justify-content: center;
 
 }
 
 .card {
-    width: 9.5em;
+    width: calc(25% - 0.6rem);
     background-color: #A7EED3;
     margin: 0.3rem;
     padding: 1.8rem 3.1rem;
+}
+.skillIcons{
+    width: 8rem;
 }
 
 .skillName {
@@ -49,20 +52,35 @@
 @media (max-width: 600px) {
     .wrapper {
         width: 100%;
+        padding: 0.1rem;
+        background-color: darkblue;
     }
 
     .skillCards {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        padding: 5rem;
+        padding: 0.2rem 0.5rem;
         justify-content: center;
-        background-color: #0f6f55;
+        background-color: aqua;
     }
     .card {
-        width: 2em;
+        width: 8rem;
         background-color: #A7EED3;
         margin: 0.3rem;
-        padding: 1.8rem 3.1rem;
+        padding: 1rem;
+    }
+    .skillIcons{
+        width: 3rem;
     }
 }
+/* @media (min-width: 600px){
+    .wrapper{
+        padding: 3rem 0;
+    }
+    .skillCards{
+        padding: 3rem 0;
+        margin: 0;
+        width: 100%;
+    }
+} */

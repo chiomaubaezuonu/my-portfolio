@@ -1,10 +1,16 @@
 
-export default [
+type Skill = {
+    id: number,
+    img: string,
+    skillName: string,
+    level: "Proficient" | "Expert" | "Intermediate"
+}
+const skillList: Skill[] = [
     {
         id: 1,
         img: "/images/html5.svg",
         skillName: "HTML5",
-        level: "Proficient"
+        level: "Expert"
     },
     {
         id: 2,
@@ -52,3 +58,4 @@ export default [
 
     }
 ]
+export default skillList;

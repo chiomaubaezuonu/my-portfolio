@@ -5,7 +5,8 @@
     display: flex;
     background-color: #DCCFED;
     font-weight: bolder;
-    justify-content: space-around;
+    justify-content: center;
+    padding-top: 8rem;
 }
 
 .contactTitle {
@@ -64,6 +65,12 @@
     margin-top: 3rem;
     padding-right: 0.8rem;
     justify-content: space-between;
+}
+.socialLink {
+    border-radius: 50%;
+    background-color: #DCCFED;
+    background-color: pink;
+    border: "0.1rem solid #9B8DB3";
 }
 
 .phone {
