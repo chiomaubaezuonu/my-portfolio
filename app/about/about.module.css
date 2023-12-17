@@ -50,9 +50,9 @@
         transform: rotate(0deg);
     }
 } */
-.absolute {
+/* .absolute {
     background-color: #181818;
-}
+} */
 
 .aboutDiv {
     display: flex;
@@ -60,45 +60,58 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 50%;
-    margin: auto;
     background-color: #181818;
     color: #777777;
-    padding: 0rem 2rem;
-    line-height: 2.5rem;
+    padding: 0rem 3rem;
+    line-height: 2rem;
 }
 
 .about {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #777777;
-
+    width: 50%;
+    text-align: center;
 }
 
 .emoji {
-    font-size: 2rem;
+    font-size: 2.1rem;
+    text-align: center;
+    margin-bottom: 2.3rem;
+    color: #4F4E4D;
 }
 
 @media (max-width: 600px) {
     .aboutDiv {
-        width: 90%;
-        padding: 5rem 0 0 0;
-        display: block;
+        /* padding-top: 4.9rem;
+        padding-bottom: 4.9rem;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem; */
+        line-height: 2.7rem;
+        display: flex;
+        justify-content: center;
+        background-color: yellow;
+        align-items: center;
+        padding: 1rem;
     }
 
     .emoji {
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: 100%;
-        margin-bottom: 1.5rem;
         color: #4F4E4D;
+        text-align: left;
+        background-color: red;
     }
 
     .about {
-        font-size: 1.2rem;
-        margin-top: 1.4rem;
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+        width: 100%;
+        text-align: left;
+        background-color: blueviolet;
     }
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
     .aboutDiv {
         width: 90%;
         padding-top: 11rem;
@@ -145,13 +158,11 @@
     .aboutDiv {
         width: 60%;
         padding-top: 12rem;
-        /* display: block; */
         background-color: #181818;
     }
 
     .emoji {
         font-size: 2.5rem;
-        /* width: 100%; */
         margin-bottom: 1.5rem;
         text-align: center;
     }
@@ -161,4 +172,5 @@
         margin-top: 2rem;
         line-height: 2rem;
     }
-}
+} 
+*/

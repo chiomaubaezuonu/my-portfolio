@@ -14,16 +14,18 @@ const page = () => {
         <div>
             <div className={styles.wrapper}>
                 <h1 className={styles.title}>My Projects</h1>
-                <p className={styles.projectText}>Here are a few projects that I've worked on. Want to see more? <Link style={{color: 'blue'}} href='/https://mail.google.com/mail/'>Email me.</Link></p>
+                <p className={styles.projectText}>Here are a few projects that I've worked on. Want to see more? <Link style={{ color: 'blue' }} href='/https://mail.google.com/mail/'>Email me.</Link></p>
                 <div className={styles.projectsContainer}>
                     {data.map((project) => (
 
                         <div key={project.id} className={styles.projectCard}>
                             <img className={styles.projectImg} src={project.img} alt="project" width={450} height={450} />
                             <div className={styles.overlay}>
-                                <div className={styles.content}>
-                                    <button className={styles.websiteButton}>Visit Website</button>
-                                </div>
+                                <h2>My Todo App</h2>
+                                <p>Keep track of your todos with My Todo App</p>
+                            </div>
+                            <div className={styles.content}>
+                                <button className={styles.websiteButton}>Visit Website</button>
                             </div>
                         </div>
 
