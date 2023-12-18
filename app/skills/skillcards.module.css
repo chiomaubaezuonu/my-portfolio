@@ -7,7 +7,7 @@
 }
 
 .skillCards {
-    width: 80%;
+    width: 50%;
     margin: auto;
     background-color: #EFF4FB;
     display: flex;
@@ -28,13 +28,13 @@
 }
 
 .skillIcons {
-    width: 8rem;
+    width: 2.3rem;
 }
 
 .skillName {
     color: #0f6f55;
     font-size: 1rem;
-    margin: 0.6rem 0;
+    margin: 0.2rem 0;
     font-weight: 700;
 }
 
@@ -50,9 +50,9 @@
     width: 100%;
     font-weight: bolder;
     font-size: 1.5rem;
-    display: block;
+    text-align: left;
     margin-bottom: 0.5rem;
-    padding-left: 4.5rem;
+    padding-left: 0rem;
 }
 
 @media (max-width: 600px) {
