@@ -82,32 +82,27 @@
 
 @media (max-width: 600px) {
     .aboutDiv {
-        /* padding-top: 4.9rem;
-        padding-bottom: 4.9rem;
-        padding-left: 0.9rem;
-        padding-right: 0.9rem; */
-        line-height: 2.7rem;
-        display: flex;
-        justify-content: center;
-        background-color: yellow;
-        align-items: center;
-        padding: 1rem;
+        display: block;
+        padding-top: 4rem;
+        padding-left: 0.8rem;
+        padding-right: 0.5rem;
     }
 
     .emoji {
-        font-size: 2rem;
+        font-size: 2.2rem;
         width: 100%;
         color: #4F4E4D;
+        margin-top: 0;
+        display: block;
         text-align: left;
-        background-color: red;
     }
 
     .about {
         font-size: 1.4rem;
-        margin-top: 1.2rem;
+        margin-top: 4rem;
         width: 100%;
         text-align: left;
-        background-color: blueviolet;
+        line-height: 2.5rem;
     }
 }
 
