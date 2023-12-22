@@ -59,20 +59,19 @@
     .wrapper {
         width: 100%;
         padding: 0.1rem;
-        background-color: darkblue;
+        padding-top: 6rem;
     }
 
     .skillCards {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        padding: 0.2rem 0.5rem;
+        padding: 2rem 0.5rem;
         justify-content: center;
-        background-color: aqua;
     }
 
     .card {
-        width: 8rem;
+        width: 12rem;
         background-color: #A7EED3;
         margin: 0.3rem;
         padding: 1rem;
@@ -81,15 +80,10 @@
     .skillIcons {
         width: 3rem;
     }
+    .skillTitle{
+        width: 24.5rem;
+    }
+    .skillLevel{
+        font-size: 1rem;
+    }
 }
-
-/* @media (min-width: 600px){
-    .wrapper{
-        padding: 3rem 0;
-    }
-    .skillCards{
-        padding: 3rem 0;
-        margin: 0;
-        width: 100%;
-    }
-} */

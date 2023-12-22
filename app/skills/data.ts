@@ -56,6 +56,14 @@ const skillList: Skill[] = [
         skillName: "Antd",
         level: "Proficient"
 
-    }
+    },
+    // {
+    //     id: 9,
+    //     img: "/images/tailwind.png",
+    //     skillName: "Tailwind",
+    //     level: "Expert"
+
+    // }
+
 ]
 export default skillList;
