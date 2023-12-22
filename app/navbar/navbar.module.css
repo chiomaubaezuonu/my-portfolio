@@ -1,0 +1,13 @@
+.navbar {
+    background-color: black;
+    color: #4F4E4D;
+    display: flex;
+    padding-right: 7rem;
+    width: 100%;
+    justify-content: right;
+}
+
+.navLinks {
+    padding: 0.2rem 2rem;
+    font-size: 1.7rem;
+}
