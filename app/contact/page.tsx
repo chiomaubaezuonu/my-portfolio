@@ -50,17 +50,19 @@ const page = () => {
 
     return (
         <div className={styles.wrapper}>
-            <div>
+            <div className={styles.interestWrapper}>
                 <h1 className={styles.contactTitle}>Let's discuss <br /> on something <mark style={{ color: "#AD2484", background: "#DCCFED" }}> cool </mark> together</h1>
                 <p className={styles.interestText}>I'm interested in..</p>
-                <Button  className={styles.interestBtns}   style={{ background: '#331C52' }} type='primary'>Ecommerce Website</Button>
-                <Button  className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Sass Website</Button> <br />
-                <Button  className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Landing Page</Button>
-                <Button  className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Portfolio</Button>
-                <Button  className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Blog Website</Button>
+                <Button className={styles.interestBtns} style={{ background: '#331C52' }} type='primary'>Ecommerce Website</Button>
+                <Button className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Sass Website</Button> <br />
+                <Button className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Landing Page</Button>
+                <Button className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Portfolio</Button>
+                <Button className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Blog Website</Button>
             </div>
-            <div><form ref={formRef} onSubmit={sendEmail} className={styles.form}>
-                {/* <p className={styles.closeModal} onClick={() => setContact(false)}>X</p>
+            <div>
+                <h1 className={styles.smallScreenContactTitle}>Let's discuss on something <mark style={{ color: "#AD2484", background: "#DCCFED" }}> cool </mark> together</h1>
+                <form ref={formRef} onSubmit={sendEmail} className={styles.form}>
+                    {/* <p className={styles.closeModal} onClick={() => setContact(false)}>X</p>
                     <input className={styles.input} name="user_name" value={yourName}
                         onChange={(e) => setYourName(e.target.value)}
                         type="text" placeholder='Your name' required />
@@ -72,14 +74,14 @@ const page = () => {
                         <Image style={{ paddingRight: '0.5rem' }} src={submit} alt='submit' width={20} height={20} />
                         Submit</button>}
                     {isPending && <button className={styles.submitBtn} type='submit'> Submitting ...</button>} */}
-                <Input className={styles.input} onChange={(e) => setYourName(e.target.value)} name="user_name" placeholder='Your name' required />
-                <Input className={styles.input} onChange={(e) => setEmail(e.target.value)} name="user_email" placeholder='Your email' required />
-                <TextArea className={styles.textArea} onChange={(e) => setMessage(e.target.value)} name='message' placeholder='Your message' />
-                {!isPending && <button className={styles.submitBtn} type='submit'>
-                    <Image style={{ paddingRight: '0.5rem', color: 'white' }} src={submit} alt='submit' width={20} height={20} />
-                    Submit</button>}
-                {isPending && <Button type='primary' className={styles.submitBtn} > Submitting ...</Button>}
-            </form>
+                    <Input className={styles.input} onChange={(e) => setYourName(e.target.value)} name="user_name" placeholder='Your name' required />
+                    <Input className={styles.input} onChange={(e) => setEmail(e.target.value)} name="user_email" placeholder='Your email' required />
+                    <TextArea className={styles.textArea} onChange={(e) => setMessage(e.target.value)} name='message' placeholder='Your message' />
+                    {!isPending && <button className={styles.submitBtn} type='submit'>
+                        <Image style={{ paddingRight: '0.5rem', color: 'white' }} src={submit} alt='submit' width={20} height={20} />
+                        Submit</button>}
+                    {isPending && <Button type='primary' className={styles.submitBtn} > Submitting ...</Button>}
+                </form>
                 {/* </div>} */}
                 <div className={styles.socials}>
                     <Link className={styles.socialLink} href='https://github.com/chiomaubaezuonu'>
