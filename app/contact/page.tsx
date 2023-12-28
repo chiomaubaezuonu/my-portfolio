@@ -52,12 +52,12 @@ const page = () => {
         <div className={styles.wrapper}>
             <div>
                 <h1 className={styles.contactTitle}>Let's discuss <br /> on something <mark style={{ color: "#AD2484", background: "#DCCFED" }}> cool </mark> together</h1>
-                <p>I'm interested in..</p>
-                <Button style={{ background: '#331C52' }} type='primary'>Ecommerce Website</Button>
-                <Button style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Sass Website</Button> <br />
-                <Button style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Landing Page</Button>
-                <Button style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Portfolio</Button>
-                <Button style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Blog Website</Button>
+                <p className={styles.interestText}>I'm interested in..</p>
+                <Button  className={styles.interestBtns}   style={{ background: '#331C52' }} type='primary'>Ecommerce Website</Button>
+                <Button  className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Sass Website</Button> <br />
+                <Button  className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Landing Page</Button>
+                <Button  className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Portfolio</Button>
+                <Button  className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Blog Website</Button>
             </div>
             <div><form ref={formRef} onSubmit={sendEmail} className={styles.form}>
                 {/* <p className={styles.closeModal} onClick={() => setContact(false)}>X</p>
@@ -85,16 +85,16 @@ const page = () => {
                     <Link className={styles.socialLink} href='https://github.com/chiomaubaezuonu'>
                         <Image src={github} alt='github' />
                     </Link>
-                    <Link  className={styles.socialLink} href='https://www.linkedin.com/in/chioma-ubaezuonu-924b1214b/'>
+                    <Link className={styles.socialLink} href='https://www.linkedin.com/in/chioma-ubaezuonu-924b1214b/'>
                         <Image src={linkedin} alt='Linkedin' />
                     </Link>
-                    <Link  className={styles.socialLink} href='https://twitter.com/ChiomaPresh1029'>
-                    <Image src={twitter} alt='twitter' />
-                </Link>
-                {/* <Image src={phone} className={styles.phone} alt='phone' />
+                    <Link className={styles.socialLink} href='https://twitter.com/ChiomaPresh1029'>
+                        <Image src={twitter} alt='twitter' />
+                    </Link>
+                    {/* <Image src={phone} className={styles.phone} alt='phone' />
                 <Image src={mail} className={styles.mail} alt='email' /> */}
+                </div>
             </div>
-        </div>
         </div >
     )
 }

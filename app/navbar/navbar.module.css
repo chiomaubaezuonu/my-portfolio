@@ -11,3 +11,14 @@
     padding: 0.2rem 2rem;
     font-size: 1.7rem;
 }
+.menuIcon{
+    opacity: 0;
+}
+@media (max-width: 600px) {
+.menuIcon{
+    opacity: 1;
+}
+.navLinks{
+    opacity: 0;
+}
+}

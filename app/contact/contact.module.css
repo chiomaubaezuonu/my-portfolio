@@ -1,12 +1,12 @@
 .wrapper {
     margin: auto;
     height: 100vh;
-    padding: 4rem;
+    padding: 3rem 4rem 0rem 4rem;
     display: flex;
     background-color: #DCCFED;
     font-weight: bolder;
-    justify-content: center;
-    padding-top: 8rem;
+    justify-content: space-between;
+    overflow-y: hidden;
 }
 
 .contactTitle {
@@ -45,6 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0.3rem;
 }
 
 .title {
@@ -59,18 +60,21 @@
 }
 
 .socials {
-    width: 40%;
+    width: 28%;
     display: flex;
     margin: auto;
-    margin-top: 3rem;
-    padding-right: 0.8rem;
+    margin-top: 0.4rem;
+    padding-right: 0.4rem;
     justify-content: space-between;
 }
+
 .socialLink {
     border-radius: 50%;
     background-color: #DCCFED;
-    background-color: pink;
-    border: "0.1rem solid #9B8DB3";
+    border: 0.1rem solid black;
+    width: 2rem;
+    margin-right: 0.2rem;
+
 }
 
 .phone {
@@ -86,12 +90,23 @@
     border-radius: 0.4rem;
 }
 
-.button {
+/* .button {
     display: block;
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
     margin: auto;
     background-color: rgb(157, 242, 253);
+    background-color: red;
+} */
+.interestText {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.interestBtns {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* @media (max-width: 600px) {
