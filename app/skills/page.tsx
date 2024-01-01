@@ -1,10 +1,14 @@
+"use client"
 import Image from 'next/image'
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './skillcards.module.css'
 import mySkills from './data'
+import menu from './menuIcon.svg'
 
 
 const Skills = () => {
+  //const [menuIcon, setMenuIcon] = useState<boolean>(window.innerWidth <= 600)
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.skillCards}>

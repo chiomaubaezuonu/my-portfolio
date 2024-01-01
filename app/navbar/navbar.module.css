@@ -2,23 +2,51 @@
     background-color: black;
     color: #4F4E4D;
     display: flex;
-    padding-right: 7rem;
+    padding-right: 3rem;
     width: 100%;
     justify-content: right;
 }
 
+.menuList {
+    display: none;
+}
+
 .navLinks {
-    padding: 0.2rem 2rem;
-    font-size: 1.7rem;
+    padding: 0.2rem 0.8rem;
+    font-size: 1.3rem;
 }
-.menuIcon{
+
+.menuIcon {
     opacity: 0;
 }
+
 @media (max-width: 600px) {
-.menuIcon{
-    opacity: 1;
-}
-.navLinks{
-    opacity: 0;
-}
+    /* .menuIcon {
+        opacity: 1;
+    } */
+
+    /* .navLinks {
+        opacity: 0;
+    } */
+
+    .navbar {
+        display: none;
+    }
+
+    .menuList {
+        display: block;
+        background-color: black;
+        color: #4F4E4D;
+        width: 100%;
+    }
+
+    .menuListWrapper {
+        display: flex;
+        background-color: black;
+        color: #4F4E4D;
+        padding: 0.9rem 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }
