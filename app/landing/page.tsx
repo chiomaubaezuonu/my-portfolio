@@ -59,7 +59,8 @@ const LandingPage = () => {
     }
     return (
         <div>
-            <div className='flex justify-between px-48 bg-black pt-30 h-screen'>
+            <div className={styles.landingPageWrapper}>
+            {/* flex justify-between px-48 pt-30 h-screen */}
                 <div className={styles.landingPage}>
                     <m.h1
                         initial={{ opacity: 0 }}
@@ -89,7 +90,7 @@ const LandingPage = () => {
                     initial={{ opacity: 0, scale: 2 }}
                     animate={{ opacity: 1, scale: 1, }}
                     transition={{ ease: "easeIn", duration: 0.2, delay: 0.5 }}>
-                    <Image className={styles.background} src={me2} alt="my-profile" width={200} height={200} />
+                    <Image className={styles.background} src={me2} alt="my-profile" />
                 </m.div>
 
             </div>

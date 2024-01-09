@@ -1,25 +1,30 @@
-/* * {
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-} */
-
-.container {
+/* .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: yellowgreen;
+} */
+
+.landingPageWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    padding: 0 7rem;
 }
 
 .landingPage {
-    /* position: "relative";
-    background-color: greenyellow; */
-    background-color: blue;
+   margin: 4rem 0;
+   height: fit-content;
 }
 
 .bigText {
     font-size: 7rem;
+    font-weight: bold;
     cursor: pointer;
-    color: red;
+    color: #EA0F1E;
+    padding: 0;
 }
 
 .whiteText {
@@ -60,9 +65,9 @@
 }
 
 .background {
-    /* position: "absolute";
-    z-index: 1; */
-    width: 100%;
+    width: 58%;
+    height: auto;
+    margin-left: 8rem;
     background-color: black;
 }
 
@@ -229,6 +234,7 @@
     margin-bottom: 0.5rem;
     padding-left: 0rem;
 }
+
 /* contact page */
 .contactWrapper {
     margin: auto;
@@ -400,7 +406,8 @@
         height: 100vh;
         padding: 6rem 2rem;
     }
-    .smallScreenContactTitle{
+
+    .smallScreenContactTitle {
         text-align: center;
         font-size: 1.2rem;
     }
