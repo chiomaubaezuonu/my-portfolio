@@ -10,7 +10,7 @@ const Skills = () => {
   //const [menuIcon, setMenuIcon] = useState<boolean>(window.innerWidth <= 600)
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.skillsWrapper}>
       <div className={styles.skillCards}>
         <h1 className={styles.skillTitle}>My Skills</h1>
         {mySkills.map(skill => {
@@ -24,7 +24,6 @@ const Skills = () => {
           )
         })}
       </div>
-      {/* </div> */}
     </div>
   )
 }

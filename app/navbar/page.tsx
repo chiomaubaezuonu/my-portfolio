@@ -18,7 +18,7 @@ const Navbar = () => {
             </div>
             <div className={styles.menuList}>
                 <div className={styles.menuListWrapper}>
-                    <h1 className='text-2xl text-white'>ChomyDev</h1>
+                    <h1 className='text-2xl text-white ml-0'>ChomyDev</h1>
                     <Image className='ml-auto w-8' onClick={() => setMenuLinks(!menuLinks)} src={menu} alt='menu-icon' />
                 </div>
                 {menuLinks && <div className={styles.Links}>

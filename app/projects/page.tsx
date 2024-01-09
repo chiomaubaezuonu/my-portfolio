@@ -11,14 +11,6 @@ type ProjectType = {
         img: string
     }[]
 }
-// const handleCard = () => (
-//     //console.log("Yes")
-//     data.map((item) => {
-//         if (item.id === data.id) {
-//             return console.log(item.id)
-//         }
-//     })
-// )
 
 const page = () => {
 

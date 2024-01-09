@@ -53,22 +53,6 @@
     transform: scale(1.5);
 }
 
-
-// .innerOverlay{
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     position: absolute;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     background-color: rgb(4, 4, 46);
-//     border-radius: 1.5rem;
-//     transition: 0.3s ease-out;
-//     opacity: 0;
-// }
 .projectImg {
     border-radius: 1.5rem;
     cursor: pointer;
@@ -91,7 +75,3 @@
     padding: 0.2rem;
     // opacity: 0;
 }
-
-// .websiteButton:hover {
-//     opacity: 1;
-// }

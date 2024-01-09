@@ -45,9 +45,15 @@
         display: flex;
         background-color: black;
         color: #4F4E4D;
-        padding: 0.9rem 2rem;
+        padding: 0.9rem 2rem 0.9rem 0.7rem;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
+
+    /* .chomyDev {
+        font-size: 3.5rem;
+        color: white;
+        background-color: red;
+    } */
 }

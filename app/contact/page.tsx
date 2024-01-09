@@ -14,7 +14,6 @@ import { Button, Input } from 'antd';
 
 const page = () => {
     const formRef = useRef<HTMLFormElement>(null);
-    // const [contact, setContact] = useState<boolean>(false)
     const [yourName, setYourName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
@@ -49,7 +48,7 @@ const page = () => {
     }
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.contactWrapper}>
             <div className={styles.interestWrapper}>
                 <h1 className={styles.contactTitle}>Let's discuss <br /> on something <mark style={{ color: "#AD2484", background: "#DCCFED" }}> cool </mark> together</h1>
                 <p className={styles.interestText}>I'm interested in..</p>
