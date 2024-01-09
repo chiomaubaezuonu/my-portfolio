@@ -6,6 +6,7 @@
     width: 100%;
     justify-content: right;
     height: 3rem;
+    position: fixed;
 }
 
 .menuList {
