@@ -1,7 +1,9 @@
-import React from 'react'
-import styles from './projects.module.css'
+"use client"
+import React, { useState } from 'react'
+import styles from './projects.module.scss'
 import data from './data'
 import Link from 'next/link'
+import { Button, Divider } from 'antd'
 
 type ProjectType = {
     data: {
@@ -9,7 +11,19 @@ type ProjectType = {
         img: string
     }[]
 }
+// const handleCard = () => (
+//     //console.log("Yes")
+//     data.map((item) => {
+//         if (item.id === data.id) {
+//             return console.log(item.id)
+//         }
+//     })
+// )
+
 const page = () => {
+
+    const [overlayText, setOverlayText] = useState(false)
+
     return (
         <div>
             <div className={styles.wrapper}>
@@ -19,11 +33,13 @@ const page = () => {
                     {data.map((project) => (
 
                         <div key={project.id} className={styles.projectCard}>
-                            <img className={styles.projectImg} src={project.img} alt="project" width={450} height={450} />
+                            <img className={styles.projectImg} src={project.img} alt="project" />
                             <div className={styles.overlay}>
-                                <h2>My Todo App</h2>
-                                <p>Keep track of your todos with My Todo App</p>
+                                <h1 className={styles.projectName}>{project.title}</h1>
                             </div>
+                            <div className={styles.innerOverlay}>
+                                <p style={{ color: 'white' }}>{project.desc}</p>
+                                <a href="https://saveyourtodolist.netlify.app/"><button className={styles.websiteButton}>{project.link}</button></a></div>
                             <div className={styles.content}>
                                 <button className={styles.websiteButton}>Visit Website</button>
                             </div>

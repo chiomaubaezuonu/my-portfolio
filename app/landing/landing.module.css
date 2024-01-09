@@ -1,3 +1,4 @@
+
 /* * {
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +11,9 @@
     align-items: center;
 }
 .landingPage{
-    position: "relative";
+    /* position: "relative";
+    background-color: greenyellow; */
+    background-color: blue;
 }
 .bigText {
     font-size: 7rem;
@@ -48,6 +51,16 @@
     content: "Contact";
 }
 .background {
-    position: "absolute";
-    z-index: 1;
+    /* position: "absolute";
+    z-index: 1; */
+    width: 100%;
+    background-color: black;
  }
+ /* .backgroundDiv{
+    background-image: url("me2.jpeg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-color: black;
+    background-blend-mode: multiply;
+ } */

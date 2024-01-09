@@ -1,5 +1,6 @@
 .wrapper {
     background-color: #EFF4FB;
+    height: calc(100vh - 3rem);
 }
 
 .title {
@@ -18,7 +19,7 @@
     /* background-color: #EFF4FB; */
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     padding: 1rem;
     margin: auto;
     justify-content: center;
@@ -29,6 +30,7 @@
     cursor: pointer;
     position: relative;
     border-radius: 1.5rem;
+    overflow: hidden;
 }
 
 .overlay {
@@ -41,16 +43,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(4, 4, 46,0.5);
+    background-color: rgba(4, 4, 46, 0.5);
     border-radius: 1.5rem;
+    transition: 0.3s ease-out;
 }
-.overlay:hover{
-   opacity: 0;
+
+.overlay:hover {
+    opacity: 0;
+    transform: scale(1.5);
 }
+
+
+// .innerOverlay{
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     position: absolute;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: rgb(4, 4, 46);
+//     border-radius: 1.5rem;
+//     transition: 0.3s ease-out;
+//     opacity: 0;
+// }
 .projectImg {
-    border-radius: 0.7rem;
+    border-radius: 1.5rem;
     cursor: pointer;
     margin: auto;
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    object-position: left;
+}
+
+.projectName {
+    font-size: 3rem;
+    color: white;
 }
 
 .websiteButton {
@@ -58,8 +89,9 @@
     color: blue;
     border-radius: 0.3rem;
     padding: 0.2rem;
-    opacity: 0;
+    // opacity: 0;
 }
-.websiteButton:hover{
-    opacity: 1;
-}
+
+// .websiteButton:hover {
+//     opacity: 1;
+// }

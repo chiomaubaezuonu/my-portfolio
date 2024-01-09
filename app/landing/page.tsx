@@ -7,8 +7,8 @@ import styles from './landing.module.css'
 
 const LandingPage = () => {
     return (
-        <div className='flex justify-between px-36 bg-black h-screen'>
-            <div className='landingPage'>
+        <div className='flex justify-between px-48 bg-black pt-30 h-screen'>
+            <div className={styles.landingPage}>
                 <m.h1
                     initial={{ opacity: 0 }}
                     animate={{ y: -25, opacity: 1 }}
@@ -33,10 +33,11 @@ const LandingPage = () => {
                 </m.h1>
             </div>
             <m.div
-                initial={{ opacity: 0, scale:2 }}
+                className={styles.backgroundDiv}
+                initial={{ opacity: 0, scale: 2 }}
                 animate={{ opacity: 1, scale: 1, }}
-                transition={{ ease: "easeIn", duration: 0.2, delay: 0.5}}>
-                <Image className={styles.background} src={me2} alt="my-profile" width={300} height={700} />
+                transition={{ ease: "easeIn", duration: 0.2, delay: 0.5 }}>
+                <Image className={styles.background} src={me2} alt="my-profile" width={200} height={200} />
             </m.div>
 
         </div>
