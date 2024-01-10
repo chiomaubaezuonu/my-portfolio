@@ -1,7 +1,7 @@
 "use client"
 import { motion as m } from 'framer-motion'
 import Image from 'next/image'
-import me2 from '../me2.jpeg'
+import me2 from './me2.png'
 import styles from './landing.module.css'
 import hand from './handWave.png'
 import data from '../projects/data'
@@ -16,6 +16,7 @@ import linkedin from '../contact/linkedin.svg'
 import submit from '../contact/submit.png'
 import emailjs from '@emailjs/browser'
 import { Button, Input } from 'antd';
+import { clsx } from 'clsx';
 
 type ProjectType = {
     data: {
@@ -60,7 +61,7 @@ const LandingPage = () => {
     return (
         <div>
             <div className={styles.landingPageWrapper}>
-            {/* flex justify-between px-48 pt-30 h-screen */}
+                {/* flex justify-between px-48 pt-30 h-screen */}
                 <div className={styles.landingPage}>
                     <m.h1
                         initial={{ opacity: 0 }}
@@ -155,6 +156,17 @@ const LandingPage = () => {
                     <Button className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Landing Page</Button>
                     <Button className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Portfolio</Button>
                     <Button className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Blog Website</Button>
+                    {/* Just trying out clsx below will delete later */}
+                    {/* <Button type='primary' className={
+                        clsx(
+                            'text-blue-700',
+
+                            {
+                                'bg-red-500': yourName !== "",
+                                'bg-green-400': yourName === "",
+                            },
+                        )}
+                    >Test Clsx</Button> */}
                 </div>
                 <div>
                     <h1 className={styles.smallScreenContactTitle}>Let's discuss on something <mark style={{ color: "#AD2484", background: "#DCCFED" }}> cool </mark> together</h1>
@@ -195,7 +207,7 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div >
-        </div>
+        </div >
     )
 }
 

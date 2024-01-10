@@ -15,8 +15,8 @@
 }
 
 .landingPage {
-   margin: 4rem 0;
-   height: fit-content;
+    margin: 4rem 0;
+    height: fit-content;
 }
 
 .bigText {
@@ -65,10 +65,10 @@
 }
 
 .background {
-    width: 58%;
+    width: 100%;
     height: auto;
-    margin-left: 8rem;
-    background-color: black;
+    /* background-color: black; */
+    outline: none;
 }
 
 /* about */
@@ -182,7 +182,7 @@
     background-color: #EFF4FB;
     width: 100%;
     margin: auto;
-    padding: 4rem 1rem;
+    padding: 7rem 1rem;
     height: calc(100vh - 3rem);
 }
 
@@ -363,6 +363,27 @@
         text-align: left;
         line-height: 2.5rem;
     }
+
+    /* project page */
+    .wrapper {
+        background-color: red;
+    }
+
+    .projectsContainer {
+        width: 100%;
+        display: flex;
+    }
+
+    .projectImg {
+        width: 28rem;
+    }
+
+    .projectCard {
+        background-color: purple;
+        width: 46%;
+        height: auto;
+    }
+
 
     /* skills page */
     .wrapper {

@@ -33,7 +33,7 @@ const page = () => {
                                 <p style={{ color: 'white' }}>{project.desc}</p>
                                 <a href="https://saveyourtodolist.netlify.app/"><button className={styles.websiteButton}>{project.link}</button></a></div>
                             <div className={styles.content}>
-                                <button className={styles.websiteButton}>Visit Website</button>
+                                {/* <button className={styles.websiteButton}>Visit Website</button> */}
                             </div>
                         </div>
 
