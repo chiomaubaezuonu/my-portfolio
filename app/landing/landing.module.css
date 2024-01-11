@@ -104,7 +104,6 @@
     background-color: #EFF4FB;
     height: 100vh;
     padding-top: 3rem;
-    background-color: #EA0F1E;
 }
 
 .title {
@@ -364,6 +363,7 @@
     /* project page */
     .wrapper {
         height: 100vh;
+        padding: 0;
     }
 
     .projectsContainer {
@@ -372,12 +372,15 @@
     }
 
     .projectImg {
-        width: 28rem;
+        width: 100%;
     }
 
     .projectCard {
         width: 46%;
         height: auto;
+    }
+    .projectName{
+        font-size: 1.4rem;
     }
 
 
@@ -385,7 +388,7 @@
     .skillsWrapper {
         width: 100%;
         padding: 0.1rem;
-        padding-top: 6rem;
+        /* padding-top: 6rem; */
         background-color: purple;
     }
 
