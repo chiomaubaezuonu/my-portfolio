@@ -7,6 +7,7 @@
     justify-content: right;
     height: 3rem;
     position: fixed;
+    z-index: 1;
 }
 
 .menuList {

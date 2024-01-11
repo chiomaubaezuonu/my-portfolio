@@ -1,59 +1,3 @@
-/* .emoji {
-    cursor: pointer;
-    font-size:4rem;
-    animation: waving-hand 2.5s infinite;
-    transform-origin: 70% 70%;
-} */
-/* .emoji{
-    animation-name: wave-animation;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    transform-origin: 70% 70%;
-    display: inline-block;
-    transform: translate(-50%, -50%);
-
-}
-.absolute{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-@keyframes waving-animation  {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    10% {
-        transform: rotate(14deg);
-    }
-
-    20% {
-        transform: rotate(-8deg);
-    }
-
-    30% {
-        transform: rotate(14deg);
-    }
- 
-    40% {
-        transform: rotate(-4.0deg);
-    }
-
-    50% {
-        transform: rotate(10deg);
-    }
-    60% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-} */
-/* .absolute {
-    background-color: #181818;
-} */
-
 .aboutDiv {
     display: flex;
     flex-direction: column;
@@ -64,6 +8,7 @@
     color: #777777;
     padding: 0rem 3rem;
     line-height: 2rem;
+    height: 100vh;
 }
 
 .about {
