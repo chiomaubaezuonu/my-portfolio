@@ -7,7 +7,7 @@ import { motion as m } from 'framer-motion'
 import styles from './about.module.css'
 // import '/global.css'
 
-const about = () => {
+const About = () => {
   return (
     <div className={styles.absolute}>
       <div className={styles.aboutDiv}>
@@ -21,4 +21,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About
