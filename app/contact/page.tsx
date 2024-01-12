@@ -12,7 +12,7 @@ import submit from './submit.png'
 import emailjs from '@emailjs/browser'
 import { Button, Input } from 'antd';
 
-const page = () => {
+const Page = () => {
     const formRef = useRef<HTMLFormElement>(null);
     const [yourName, setYourName] = useState("")
     const [email, setEmail] = useState("")
@@ -100,4 +100,4 @@ const page = () => {
     )
 }
 
-export default page 
+export default Page 
