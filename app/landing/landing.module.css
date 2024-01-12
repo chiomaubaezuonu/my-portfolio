@@ -379,7 +379,8 @@
         width: 46%;
         height: auto;
     }
-    .projectName{
+
+    .projectName {
         font-size: 1.4rem;
     }
 
@@ -388,31 +389,31 @@
     .skillsWrapper {
         width: 100%;
         padding: 0.1rem;
-        /* padding-top: 6rem; */
-        background-color: purple;
     }
 
     .skillCards {
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
-        padding: 2rem 0.5rem;
+        padding: 1rem 0.5rem;
+        height: fit-content;
         justify-content: center;
     }
 
     .card {
-        width: 12rem;
+        width:11rem;
+        height:7rem;
         background-color: #A7EED3;
         margin: 0.3rem;
-        padding: 1rem;
     }
 
     .skillIcons {
-        width: 3rem;
+        width: 2rem;
     }
 
     .skillTitle {
         width: 24.5rem;
+        margin-left: 0.7rem;
     }
 
     .skillLevel {

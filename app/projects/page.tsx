@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './projects.module.scss'
 import data from './data'
 import Link from 'next/link'
@@ -13,8 +13,6 @@ type ProjectType = {
 }
 
 const page = () => {
-
-    const [overlayText, setOverlayText] = useState(false)
 
     return (
         <div>

@@ -75,12 +75,12 @@
 @media(max-width: 600px) {
     .wrapper {
         height: 100vh;
+        padding: 0.7rem;
     }
 
     .projectsContainer {
         width: 100%;
         display: flex;
-        background-color: green;
     }
 
     .projectImg {

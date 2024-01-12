@@ -1,7 +1,4 @@
 import LandingPage from "./landing/page";
-import Skills from "./skills/page";
-import data from "./skills/data"
-import Link from "next/link";
 
 export default function Home() {
 
