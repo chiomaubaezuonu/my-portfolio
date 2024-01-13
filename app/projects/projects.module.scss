@@ -36,11 +36,29 @@
     width: 35%;
 }
 
+.projectCard:hover {
+    .overlay {
+        z-index: -10;
+        transform: scale(1.5);
+        transition: 0.5s ease-in-out
+    }
+
+
+    .innerOverlay {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        background-color: rgb(3, 3, 27);
+        transition: 0.5s ease-in-out
+
+    }
+}
+
 .overlay {
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    height: 100%;
+    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -49,11 +67,23 @@
     background-color: rgba(4, 4, 46, 0.5);
     border-radius: 1.5rem;
     transition: 0.3s ease-out;
+    z-index: 1;
 }
 
-.overlay:hover {
-    opacity: 0;
-    transform: scale(1.5);
+.innerOverlay {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 4, 46);
+    border-radius: 1.5rem;
+    transition: 0.3s ease-out;
+    z-index: -1;
 }
 
 .projectImg {
@@ -71,6 +101,17 @@
     color: white;
 }
 
+.websiteButton {
+    padding: 0.3rem 1rem;
+    color: powderblue;
+    border-radius: 3rem;
+    border: 0.1rem solid powderblue;
+}
+
+.websiteButton:hover {
+    background-color: powderblue;
+    color: rgb(4, 4, 46);
+}
 
 @media(max-width: 600px) {
     .wrapper {
@@ -91,7 +132,8 @@
         width: 46%;
         height: auto;
     }
-    .projectName{
+
+    .projectName {
         font-size: 1.45rem;
     }
 }
