@@ -50,7 +50,6 @@
         z-index: 5;
         background-color: rgb(3, 3, 27);
         transition: 0.5s ease-in-out
-
     }
 }
 
@@ -64,10 +63,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(4, 4, 46, 0.5);
+    background-color: rgba(8, 8, 94, 0.7);
     border-radius: 1.5rem;
     transition: 0.3s ease-out;
     z-index: 1;
+    // font-family: 'Libre Baskerville', serif;
+    // font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 .innerOverlay {
@@ -84,6 +87,10 @@
     border-radius: 1.5rem;
     transition: 0.3s ease-out;
     z-index: -1;
+    padding: 4rem 1rem;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2rem;
 }
 
 .projectImg {
