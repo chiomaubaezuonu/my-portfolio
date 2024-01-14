@@ -70,7 +70,7 @@
     // font-family: 'Libre Baskerville', serif;
     // font-weight: 700;
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .innerOverlay {
@@ -90,7 +90,7 @@
     padding: 4rem 1rem;
     font-family: 'Lora', serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .projectImg {
@@ -113,6 +113,8 @@
     color: powderblue;
     border-radius: 3rem;
     border: 0.1rem solid powderblue;
+    margin-left: 4rem;
+    margin-top: 2rem;
 }
 
 .websiteButton:hover {

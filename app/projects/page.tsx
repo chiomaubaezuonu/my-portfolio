@@ -28,7 +28,7 @@ const Page = () => {
                                 <h1 className={styles.projectName}>{project.title}</h1>
                             </div>
                             <div className={styles.innerOverlay}>
-                                <p style={{ color: 'white' }}>{project.desc}</p>
+                                <p className='text-white text-center'>{project.desc}</p>
                                 <a href="https://saveyourtodolist.netlify.app/"><button className={styles.websiteButton}>{project.link}</button></a>
                             </div>
                         </div>
