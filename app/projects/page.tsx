@@ -18,18 +18,18 @@ const Page = () => {
         <div>
             <div className={styles.wrapper}>
                 <h1 className={styles.title}>My Projects</h1>
-                <p className={styles.projectText}>Here are a few projects that I've worked on. Want to see more? <Link style={{ color: 'blue' }} href='/https://mail.google.com/mail/'>Email me.</Link></p>
-                <div className={styles.projectsContainer}>
-                    {data.map((project) => (
+                <p className={styles.cardText}>Here are a few projects that I've worked on. Want to see more? <Link style={{ color: 'blue' }} href='/https://mail.google.com/mail/'>Email me.</Link></p>
+                <div className={styles.cardsContainer}>
+                    {data.map((card) => (
 
-                        <div key={project.id} className={styles.projectCard}>
-                            <img className={styles.projectImg} src={project.img} alt="project" />
+                        <div key={card.id} className={styles.projectCard}>
+                            <img className={styles.cardImg} src={card.img} alt="card image" />
                             <div className={styles.overlay}>
-                                <h1 className={styles.projectName}>{project.title}</h1>
+                                <h1 className={styles.cardName}>{card.title}</h1>
                             </div>
                             <div className={styles.innerOverlay}>
-                                <p className='text-white text-center'>{project.desc}</p>
-                                <a href="https://saveyourtodolist.netlify.app/"><button className={styles.websiteButton}>{project.link}</button></a>
+                                <p className='text-white text-center'>{card.desc}</p>
+                                <a href={card.link}><button className={styles.websiteButton}>{card.websiteLink}</button></a>
                             </div>
                         </div>
 

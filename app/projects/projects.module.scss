@@ -10,13 +10,13 @@
     font-weight: bolder;
 }
 
-.projectText {
+.cardText {
     font-size: 1.1rem;
     text-align: center;
     font-weight: 500;
 }
 
-.projectsContainer {
+.cardsContainer {
     /* background-color: #EFF4FB; */
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +93,7 @@
     font-size: 1.2rem;
 }
 
-.projectImg {
+.cardImg {
     border-radius: 1.5rem;
     cursor: pointer;
     margin: auto;
@@ -103,7 +103,7 @@
     object-position: left;
 }
 
-.projectName {
+.cardName {
     font-size: 1.8rem;
     color: white;
 }
@@ -128,12 +128,12 @@
         padding: 0.7rem;
     }
 
-    .projectsContainer {
+    .cardsContainer {
         width: 100%;
         display: flex;
     }
 
-    .projectImg {
+    .cardImg {
         width: 28rem;
     }
 
@@ -142,7 +142,7 @@
         height: auto;
     }
 
-    .projectName {
+    .cardName {
         font-size: 1.45rem;
     }
 }
