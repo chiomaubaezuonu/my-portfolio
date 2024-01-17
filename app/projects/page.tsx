@@ -4,7 +4,8 @@ import styles from './projects.module.scss'
 import data from './data'
 import Link from 'next/link'
 import { Button, Divider } from 'antd'
-
+import chat2 from "./chat2.svg"
+import Image from 'next/image'
 type ProjectType = {
     data: {
         id: number,
@@ -25,7 +26,10 @@ const Page = () => {
                         <div key={card.id} className={styles.projectCard}>
                             <img className={styles.cardImg} src={card.img} alt="card image" />
                             <div className={styles.overlay}>
-                                <h1 className={styles.cardName}>{card.title}</h1>
+                                <div className='flex'>
+                                    <img src={card.logo} alt='chat icon' className={styles.logo} />
+                                    <h1 className={styles.cardName}>{card.title}</h1>
+                                </div>
                             </div>
                             <div className={styles.innerOverlay}>
                                 <p className='text-white text-center'>{card.desc}</p>

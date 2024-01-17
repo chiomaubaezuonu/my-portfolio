@@ -102,7 +102,10 @@
     object-fit: cover;
     object-position: left;
 }
-
+.logo{
+    width: 3rem;
+    margin-right: 0.5rem;
+}
 .cardName {
     font-size: 1.8rem;
     color: white;
@@ -134,12 +137,11 @@
     }
 
     .cardImg {
-        width: 28rem;
+        width: 18rem;
     }
 
     .projectCard {
-        width: 46%;
-        height: auto;
+        width: 12rem;
     }
 
     .cardName {
