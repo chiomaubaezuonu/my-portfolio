@@ -2,7 +2,7 @@ export default [
     {
         id: 1,
         img: '/images/todo.jpeg',
-        logo: "/images/todoLogo.png",
+        logo: "/images/todoLogo.svg",
         title: "Todo App",
         desc: "Keep track of your todos with My Todo App",
         websiteLink: "Visit Website >",
@@ -29,6 +29,7 @@ export default [
     {
         id: 4,
         img: '/images/metabnb.jpeg',
+        logo: "/images/bnb-logo.svg",
         title: "Metabnb",
         desc: "Take full advantage of our quick Bitcoin investment platform",
         websiteLink: "Visit Website >",
