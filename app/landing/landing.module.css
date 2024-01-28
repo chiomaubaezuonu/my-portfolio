@@ -67,7 +67,7 @@
 .background {
     width: 100%;
     height: auto;
-   border-radius: 5rem;
+    border-radius: 5rem;
 }
 
 /* about */
@@ -99,7 +99,136 @@
 }
 
 /* Project page */
+
 .wrapper {
+    background-color: #EFF4FB;
+    height: 100vh;
+    padding-top: 3rem;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.cardText {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.cardsContainer {
+    /* background-color: #EFF4FB; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 1rem;
+    height: 80.6vh;
+    margin: auto;
+    justify-content: center;
+}
+
+.projectCard {
+    margin: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    border-radius: 1.5rem;
+
+
+    width: 35%;
+}
+
+.projectCard:hover {
+    .overlay {
+        z-index: -10;
+        transform: scale(1.5);
+        transition: 0.5s ease-in-out;
+    }
+
+
+    .innerOverlay {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        background-color: rgb(3, 3, 27);
+        transition: 0.5s ease-in-out;
+    }
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(8, 8, 94, 0.7);
+    border-radius: 1.5rem;
+    transition: 0.3s ease-out;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.innerOverlay {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 4, 46);
+    border-radius: 1.5rem;
+    transition: 0.3s ease-out;
+    z-index: -1;
+    padding: 4rem 1rem;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.cardImg {
+    border-radius: 1.5rem;
+    cursor: pointer;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.logo {
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+
+.cardName {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.websiteButton {
+    padding: 0.3rem 1rem;
+    color: powderblue;
+    border-radius: 3rem;
+    border: 0.1rem solid powderblue;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.websiteButton:hover {
+    background-color: powderblue;
+    color: rgb(4, 4, 46);
+}
+
+/* .wrapper {
     background-color: #EFF4FB;
     height: 100vh;
     padding-top: 3rem;
@@ -115,7 +244,7 @@
     font-size: 1.1rem;
     text-align: center;
     font-weight: 500;
-}
+} */
 
 .projectsContainer {
     /* background-color: #EFF4FB; */
@@ -335,6 +464,11 @@
 }
 
 @media (max-width: 600px) {
+    .landingPageWrapper {
+        background-color: red;
+        height: 100%;
+    }
+
     .aboutDiv {
         display: block;
         padding-top: 4rem;
@@ -361,28 +495,33 @@
 
     /* project page */
     .wrapper {
-        height: 100vh;
-        padding: 0;
+        height: 100%;
+        padding: 0.7rem;
     }
 
-    .projectsContainer {
+    .cardsContainer {
         width: 100%;
         display: flex;
+        height: 100%;
     }
 
-    .projectImg {
+    .cardImg {
         width: 100%;
     }
 
     .projectCard {
-        width: 46%;
-        height: auto;
+        width: 100%;
+        height: 13rem;
+        background-color: blue;
     }
 
-    .projectName {
-        font-size: 1.4rem;
+    .cardName {
+        font-size: 1.45rem;
     }
 
+    .projectsContainer {
+        width: 100%;
+    }
 
     /* skills page */
     .skillsWrapper {
@@ -400,8 +539,8 @@
     }
 
     .card {
-        width:11rem;
-        height:7rem;
+        width: 11rem;
+        height: 7rem;
         background-color: #A7EED3;
         margin: 0.3rem;
     }
