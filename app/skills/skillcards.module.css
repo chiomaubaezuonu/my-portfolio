@@ -56,17 +56,16 @@
 }
 
 @media (max-width: 600px) {
-    .wrapper {
+    .skillsWrapper {
         width: 100%;
         padding: 0.1rem;
-        padding-top: 6rem;
     }
 
     .skillCards {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        padding: 2rem 0.5rem;
+        padding: 0.5rem 0.5rem;
         justify-content: center;
     }
 
