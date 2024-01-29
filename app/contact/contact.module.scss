@@ -107,21 +107,25 @@
         flex-direction: column;
         align-items: center;
         height: 80vh;
-        padding: 2rem 2rem 6rem 2rem;
+        padding: 2rem 0rem 6rem 0rem;
     }
-    .smallScreenContactTitle{
+
+    .smallScreenContactTitle {
         text-align: center;
         font-size: 1.2rem;
     }
-   .input{
-    width: 23rem;
-   }
-   .textArea{
-    width: 23rem;
-   }
-   .submitBtn{
-    width: 23rem;
-   }
+
+    .input {
+        width: 23rem;
+    }
+
+    .textArea {
+        width: 23rem;
+    }
+
+    .submitBtn {
+        width: 23rem;
+    }
 
     .interestWrapper {
         display: none;
@@ -130,5 +134,9 @@
     .interestText,
     .interestBtns {
         opacity: 0;
+    }
+
+    .socials {
+        width: 30%;
     }
 }
