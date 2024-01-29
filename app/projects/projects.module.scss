@@ -32,9 +32,9 @@
     cursor: pointer;
     position: relative;
     border-radius: 1.5rem;
-   
-    
     width: 35%;
+    display: flex;
+    background-color: red;
 }
 
 .projectCard:hover {

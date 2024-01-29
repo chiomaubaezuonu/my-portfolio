@@ -2,7 +2,7 @@
 import { motion as m } from 'framer-motion'
 import Image from 'next/image'
 import me2 from './me2.png'
-import styles from './landing.module.css'
+import styles from './landing.module.scss'
 import hand from './handWave.png'
 import data from '../projects/data'
 import Link from 'next/link'
@@ -109,8 +109,8 @@ const LandingPage = () => {
             {/* Project page */}
             <div className={styles.wrapper}>
                 <h1 className={styles.title}>My Projects</h1>
-                <p className={styles.projectText}>Here are a few projects that I've worked on. Want to see more? <Link style={{ color: 'blue' }} href='/https://mail.google.com/mail/'>Email me.</Link></p>
-                <div className={styles.projectsContainer}>
+                <p className={styles.cardText}>Here are a few projects that I've worked on. Want to see more? <Link style={{ color: 'blue' }} href='/https://mail.google.com/mail/'>Email me.</Link></p>
+                <div className={styles.cardsContainer}>
                     {data.map((card) => (
 
                         <div key={card.id} className={styles.projectCard}>
