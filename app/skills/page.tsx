@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import styles from './skillcards.module.css'
+import styles from './skillcards.module.scss'
 import mySkills from './data'
 import menu from './menuIcon.svg'
 

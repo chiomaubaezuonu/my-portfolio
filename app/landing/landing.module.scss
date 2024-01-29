@@ -454,10 +454,12 @@
     .skillsWrapper {
         width: 100%;
         padding: 0.1rem;
+        background-color: blue;
+        height: 100%;
     }
 
     .skillCards {
-        width: 80%;
+        width: 90%;
         display: flex;
         flex-wrap: wrap;
         padding: 1rem 0.5rem;
