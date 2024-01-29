@@ -1,6 +1,6 @@
 "use client"
 import React, { useRef, useState } from 'react'
-import styles from './contact.module.css'
+import styles from './contact.module.scss'
 import Image from 'next/image'
 import github from './github.svg'
 import twitter from './twitter.svg'
