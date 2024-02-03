@@ -123,7 +123,7 @@ const LandingPage = () => {
                             </div>
                             <div className={styles.innerOverlay}>
                                 <p className='text-white text-center'>{card.desc}</p>
-                                <a href={card.link}><button className={styles.websiteButton}>{card.websiteLink}</button></a>
+                                <a href={card.link} target='_blank'><button className={styles.websiteButton}>{card.websiteLink}</button></a>
                             </div>
                         </div>
 
@@ -157,17 +157,6 @@ const LandingPage = () => {
                     <Button className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Landing Page</Button>
                     <Button className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Portfolio</Button>
                     <Button className={styles.interestBtns} style={{ border: "0.12rem solid #9B8DB3", color: "#331C52" }} type='primary'>Blog Website</Button>
-                    {/* Just trying out clsx below will delete later */}
-                    {/* <Button type='primary' className={
-                        clsx(
-                            'text-blue-700',
-
-                            {
-                                'bg-red-500': yourName !== "",
-                                'bg-green-400': yourName === "",
-                            },
-                        )}
-                    >Test Clsx</Button> */}
                 </div>
                 <div>
                     <h1 className={styles.smallScreenContactTitle}>Let's discuss on something <mark style={{ color: "#AD2484", background: "#DCCFED" }}> cool </mark> together</h1>
