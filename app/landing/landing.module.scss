@@ -304,6 +304,10 @@
     font-size: 2rem;
     margin-bottom: 3.2rem;
 }
+.smallScreenContactTitle{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
 
 .form {
     padding: 1rem;
@@ -314,14 +318,12 @@
 .input {
     margin-bottom: 1rem;
     width: 27rem;
-    padding: 0.3rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 0.4rem;
 }
 
 .textArea {
-    padding: 2.5rem;
     border-radius: 0.4rem;
-    width: 27rem;
     margin-bottom: 2rem;
 }
 
@@ -350,7 +352,7 @@
 }
 
 .socials {
-    width: 28%;
+    width: 35%;
     display: flex;
     margin: auto;
     margin-top: 0.4rem;

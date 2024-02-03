@@ -175,7 +175,7 @@ const LandingPage = () => {
                     {isPending && <button className={styles.submitBtn} type='submit'> Submitting ...</button>} */}
                         <Input className={styles.input} onChange={(e) => setYourName(e.target.value)} name="user_name" placeholder='Your name' required />
                         <Input className={styles.input} onChange={(e) => setEmail(e.target.value)} name="user_email" placeholder='Your email' required />
-                        <TextArea className={styles.textArea} onChange={(e) => setMessage(e.target.value)} name='message' placeholder='Your message' />
+                        <TextArea className={styles.textArea} rows={6} onChange={(e) => setMessage(e.target.value)} name='message' placeholder='Your message' />
                         {!isPending && <button className={styles.submitBtn} type='submit'>
                             <Image style={{ paddingRight: '0.5rem', color: 'white' }} src={submit} alt='submit' width={20} height={20} />
                             Submit</button>}
