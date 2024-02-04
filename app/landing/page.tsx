@@ -97,7 +97,7 @@ const LandingPage = () => {
             </div>
             {/* about page */}
             <div className={styles.absolute}>
-                <div className={styles.aboutDiv}>
+                <div className={styles.aboutDiv} id='aboutPage'>
                     <span className={styles.emoji}> Hi, I'm Chioma Precious👋 </span>
                     <p className={styles.about}>I am a skilled frontend web developer, I build exceptional and accessible digital experiences for the web.
                         My tech stack at work is Html5, Css, Javascript, Next.js, TypeScript, Firebase and SASS.
@@ -107,7 +107,7 @@ const LandingPage = () => {
             </div >
 
             {/* Project page */}
-            <div className={styles.wrapper}>
+            <div className={styles.wrapper} id='projectsPage'>
                 <h1 className={styles.title}>My Projects</h1>
                 <p className={styles.cardText}>Here are a few projects that I've worked on. Want to see more? <Link style={{ color: 'blue' }} href='/https://mail.google.com/mail/'>Email me.</Link></p>
                 <div className={styles.cardsContainer}>
@@ -131,7 +131,7 @@ const LandingPage = () => {
                 </div>
             </div>
             {/* Skills page */}
-            <div className={styles.skillsWrapper}>
+            <div className={styles.skillsWrapper} id='skillsPage'>
                 <div className={styles.skillCards}>
                     <h1 className={styles.skillTitle}>My Skills</h1>
                     {mySkills.map(skill => {
@@ -148,7 +148,7 @@ const LandingPage = () => {
             </div>
 
             {/* contact page */}
-            <div className={styles.contactWrapper}>
+            <div className={styles.contactWrapper} id='contactPage'>
                 <div className={styles.interestWrapper}>
                     <h1 className={styles.contactTitle}>Let's discuss <br /> on something <mark style={{ color: "#AD2484", background: "#DCCFED" }}> cool </mark> together</h1>
                     <p className={styles.interestText}>I'm interested in..</p>

@@ -11,10 +11,10 @@ const Navbar = () => {
         <div className={styles.navWrpper}>
             <div className={styles.navbar}>
                 <Link href='/'><h3 className={styles.navLinks}>Home</h3></Link>
-                <Link href='/about'><h3 className={styles.navLinks}>About</h3></Link>
-                <Link href='/projects'><h3 className={styles.navLinks}>Work</h3></Link>
-                <Link href='/skills'> <h3 className={styles.navLinks}>Skills</h3></Link>
-                <Link href='/contact'> <h3 className={styles.navLinks}>Contact</h3></Link>
+                <Link href='#aboutPage'><h3 className={styles.navLinks}>About</h3></Link>
+                <Link href='#projectsPage'><h3 className={styles.navLinks}>Work</h3></Link>
+                <Link href='#skillsPage'> <h3 className={styles.navLinks}>Skills</h3></Link>
+                <Link href='#contactPage'> <h3 className={styles.navLinks}>Contact</h3></Link>
             </div>
             <div className={styles.menuList}>
                 <div className={styles.menuListWrapper}>
