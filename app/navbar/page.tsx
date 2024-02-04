@@ -23,10 +23,10 @@ const Navbar = () => {
                 </div>
                 {menuLinks && <div className={styles.Links}>
                     <Link href='/' onClick={() => setMenuLinks(false)}><h3 className={styles.navLinks}>Home</h3></Link>
-                    <Link href='/about' onClick={() => setMenuLinks(false)}><h3 className={styles.navLinks}>About</h3></Link>
-                    <Link href='/projects' onClick={() => setMenuLinks(false)}><h3 className={styles.navLinks}>Work</h3></Link>
-                    <Link href='/skills' onClick={() => setMenuLinks(false)}> <h3 className={styles.navLinks}>Skills</h3></Link>
-                    <Link href='/contact' onClick={() => setMenuLinks(false)}> <h3 className={styles.navLinks}>Contact</h3></Link>
+                    <Link href='#aboutPage' onClick={() => setMenuLinks(false)}><h3 className={styles.navLinks}>About</h3></Link>
+                    <Link href='#projectsPage' onClick={() => setMenuLinks(false)}><h3 className={styles.navLinks}>Work</h3></Link>
+                    <Link href='#skillsPage' onClick={() => setMenuLinks(false)}> <h3 className={styles.navLinks}>Skills</h3></Link>
+                    <Link href='#contactPage' onClick={() => setMenuLinks(false)}> <h3 className={styles.navLinks}>Contact</h3></Link>
                 </div>}
             </div>
         </div>

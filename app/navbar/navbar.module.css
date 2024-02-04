@@ -41,6 +41,8 @@
         background-color: black;
         color: #4F4E4D;
         width: 100%;
+        position: fixed;
+        z-index: 8;
     }
 
     .menuListWrapper {
