@@ -107,7 +107,7 @@ const LandingPage = () => {
             {/* Project page */}
             <div className={styles.wrapper} id='projectsPage'>
                 <h1 className={styles.title}>My Projects</h1>
-                <p className={styles.cardText}>Here are a few projects that I've worked on. Want to see more? <span style={{ color: 'blue' }} onClick={(e) => {window.location.href ='mailto:chiomaubaezuonu102@email.com'}}>Email me.</span></p>
+                <p className={styles.cardText}>Here are a few projects that I've worked on. Want to see more? <span style={{ color: 'blue', cursor: "pointer" }} onClick={(e) => {window.location.href ='mailto:chiomaubaezuonu102@email.com'}}>Email me.</span></p>
                 <div className={styles.cardsContainer}>
                     {data.map((card) => (
 
