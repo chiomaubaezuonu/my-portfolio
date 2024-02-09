@@ -16,7 +16,6 @@ import linkedin from '../contact/linkedin.svg'
 import submit from '../contact/submit.png'
 import emailjs from '@emailjs/browser'
 import { Button, Input } from 'antd';
-import { clsx } from 'clsx';
 
 type ProjectType = {
     data: {
@@ -108,7 +107,7 @@ const LandingPage = () => {
             {/* Project page */}
             <div className={styles.wrapper} id='projectsPage'>
                 <h1 className={styles.title}>My Projects</h1>
-                <p className={styles.cardText}>Here are a few projects that I've worked on. Want to see more? <Link style={{ color: 'blue' }} href='/https://mail.google.com/mail/'>Email me.</Link></p>
+                <p className={styles.cardText}>Here are a few projects that I've worked on. Want to see more? <span style={{ color: 'blue' }} onClick={(e) => {window.location.href ='mailto:chiomaubaezuonu102@email.com'}}>Email me.</span></p>
                 <div className={styles.cardsContainer}>
                     {data.map((card) => (
 
