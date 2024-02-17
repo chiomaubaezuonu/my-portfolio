@@ -8,7 +8,7 @@ import menu from './menu.svg'
 const Navbar = () => {
     const [menuLinks, setMenuLinks] = useState<boolean>(false)
     return (
-        <div className={styles.navWrpper}>
+        <div className={styles.NavWrpper}>
             <div className={styles.navbar}>
                 <Link href='/'><h3 className={styles.navLinks}>Home</h3></Link>
                 <Link href='#aboutPage'><h3 className={styles.navLinks}>About</h3></Link>
