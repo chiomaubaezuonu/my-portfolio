@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem 6rem 1rem 6rem;
+}
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+.writings {
+  font-style: italic;
+}
+.subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+  opacity: 0.7;
+  width: 50%;
+  margin: 1rem auto 4rem;
+  color: #242424;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card {
+  display: flex;
+  gap: 2rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  background-color: #f9fafb;
+  transition: 0.3s ease-in-out;
+}
+.blogDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blogTitle {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+.text {
+  font-size: 1.2rem;
+  opacity: 0.5;
+  overflow: hidden;
+  /* -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  display: -webkit-box; */
+}
+.linkWrapper {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 138, 0);
+  gap: 0.5rem;
+}
+.linkText {
+  color: rgb(255, 138, 0);
+  text-decoration: none;
+}

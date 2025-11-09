@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  padding: 0.7rem 0.7rem 1rem 2rem;
+  background-color: rgba(130, 125, 125, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4rem;
+  transition: 0.3s ease-in-out;
+  backdrop-filter: blur(0.6rem);
+  top: 2rem;
+  left: 6rem;
+  right: 6rem;
+  color: white;
+  z-index: 100;
+}
+.logo{
+    width: 1.5rem;
+    height: auto;
+    object-fit: cover;
+}
+.navList{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 6rem;
+    list-style: none;
+}
+.linkedin {
+  height: 1.7rem;
+  width: auto;
+}
+.button {
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+  padding: 0.7rem 1.6rem;
+  cursor: pointer;
+  border: 0.1rem solid black;
+  transition: 0.3s ease-in-out;
+}
+.activeLink{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.inactiveLink{
+    font-weight: 300;
+    color: #FFFFFFAB;
+    text-decoration: none;
+    cursor: pointer;
+}
+.headerSocials{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
